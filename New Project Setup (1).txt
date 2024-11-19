@@ -49,3 +49,7 @@ Django New Project Setup Guide
     - Command: `py manage.py runserver`
     - Purpose: Launches the local development server.
 
+11. Delete Project:
+   - Command: rm -r projectfoldername
+   - Purpose: Delete a django project projectfoldername.
+
