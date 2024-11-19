@@ -1,0 +1,51 @@
+Django New Project Setup Guide
+
+1. Create Virtual Environment:
+   - Command: `py -m venv .venv`
+   - Purpose: Isolates project dependencies.
+
+2. Activate the Environment:
+   - Command (PowerShell): `.\.venv\Scripts\Activate.ps1`
+   - Purpose: Activates the virtual environment for use.
+
+3. Install Django:
+   - Command: `pip install django`
+   - Purpose: Installs the Django
+
+4. Install Django REST Framework (Optional):
+   - Command: `pip install djangorestframework`
+   - Purpose: Installs Django REST Framework for building APIs.
+
+5. Create Django Project:
+   - Command: `django-admin startproject event-management .`
+   - Purpose: Initializes a new Django project named `myproject`.
+
+6. Save Dependencies:
+   - Command: `pip freeze > requirements.txt`
+   - Purpose: Records installed dependencies for easy replication.
+
+
+7. Configure PostgreSQL Database:
+   - File: `.env`
+   - Content:
+     ```
+     DB_NAME=your_database_name
+     DB_USER=your_username
+     DB_PASSWORD=your_password
+     DB_HOST=localhost
+     DB_PORT=5432
+     ```
+   - Purpose: Sets up database configuration for PostgreSQL.
+
+8. Migrate Database:
+   - Command: `py manage.py migrate`
+   - Purpose: Applies migrations to create database schema.
+
+9. Create Superuser (Optional):
+   - Command: `py manage.py createsuperuser`
+   - Purpose: Creates an admin superuser for Django admin access.
+
+10. Start Development Server:
+    - Command: `py manage.py runserver`
+    - Purpose: Launches the local development server.
+
